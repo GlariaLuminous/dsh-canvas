@@ -2,13 +2,19 @@
 
 把 DeepSeek Harness 对话里的成果，变成可以整理、批注、比较和继续修改的画布。
 
-**这是实际运行在 DSH 里的插件。** 不另起聊天服务，不配置第二份模型密钥；直接使用当前会话的模型、消息队列和权限设置。
+An unofficial artifact canvas for DeepSeek Harness: organize outputs, annotate elements, iterate with AI, and compare or restore versions.
+
+[观看 60 秒演示](https://github.com/GlariaLuminous/dsh-canvas/releases/download/v0.1.0/dsh-canvas-client-demo-1080p.mp4) · [下载插件安装包](https://github.com/GlariaLuminous/dsh-canvas/releases/download/v0.1.0/dsh-canvas-workbench-0.1.0.tgz) · [验证记录](./VALIDATION.md)
+
+[![实际产品的版本比较界面](./assets/preview.png)](https://github.com/GlariaLuminous/dsh-canvas/releases/tag/v0.1.0)
+
+这是非官方社区插件，直接使用当前 DSH 会话的模型、消息队列和权限设置。当前版本为早期预览版。
 
 ## 安装
 
 当前验证环境：**DeepSeek Harness 0.2.1-rc.2，Web 界面，Node.js 22.18+**。DSH 的扩展接口仍在变化，其他版本与桌面内嵌界面尚未验证。
 
-下载构建好的 `dsh-canvas-workbench-0.1.0.tgz`，在终端执行（路径替换为实际位置）：
+从 [Releases](https://github.com/GlariaLuminous/dsh-canvas/releases) 下载构建好的 `dsh-canvas-workbench-0.1.0.tgz`，在终端执行（路径替换为实际位置）：
 
 ```powershell
 dsh plugin --profile web add "C:/path/to/dsh-canvas-workbench-0.1.0.tgz" --ignore-scripts
@@ -20,6 +26,8 @@ dsh web
 源码本地安装：
 
 ```powershell
+git clone https://github.com/GlariaLuminous/dsh-canvas.git
+cd dsh-canvas
 npm ci --ignore-scripts
 npm run check
 npm pack --ignore-scripts

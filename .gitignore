@@ -6,3 +6,8 @@ playwright-report/
 .env*
 !.env.example
 .DS_Store
+.dsh/
+.credentials*
+*.log
+*.pem
+*.key

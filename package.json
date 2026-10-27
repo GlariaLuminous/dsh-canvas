@@ -76,5 +76,21 @@
   },
   "overrides": {
     "zod": "4.6.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GlariaLuminous/dsh-canvas.git"
+  },
+  "homepage": "https://github.com/GlariaLuminous/dsh-canvas#readme",
+  "bugs": {
+    "url": "https://github.com/GlariaLuminous/dsh-canvas/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "canvas",
+    "artifacts",
+    "annotations",
+    "version-history"
+  ]
 }
