@@ -1,4 +1,4 @@
-export type ArtifactKind = 'markdown' | 'html' | 'image';
+export type ArtifactKind = "markdown" | "html" | "image";
 export interface ArtifactVersion {
   id: string;
   content: string;
@@ -33,10 +33,17 @@ export interface Board {
 }
 export class CanvasError extends Error {
   code: string;
-  constructor(code: string, message: string) { super(message); this.code = code; this.name = 'CanvasError'; }
+  constructor(code: string, message: string) {
+    super(message);
+    this.code = code;
+    this.name = "CanvasError";
+  }
 }
 export function activeVersion(artifact: Artifact): ArtifactVersion {
-  const version = artifact.versions.find(item => item.id === artifact.activeVersionId);
-  if (!version) throw new CanvasError('invalid-version', '找不到这个成果版本。');
+  const version = artifact.versions.find(
+    (item) => item.id === artifact.activeVersionId,
+  );
+  if (!version)
+    throw new CanvasError("invalid-version", "找不到这个成果版本。");
   return version;
 }
