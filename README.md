@@ -2,13 +2,23 @@
 
 把 DeepSeek Harness 对话里的成果，变成可以整理、批注、比较和继续修改的画布。
 
-An unofficial artifact canvas for DeepSeek Harness: organize outputs, annotate elements, iterate with AI, and compare or restore versions.
-
-[观看 60 秒演示](https://github.com/GlariaLuminous/dsh-canvas/releases/download/v0.1.0/dsh-canvas-client-demo-1080p.mp4) · [下载插件安装包](https://github.com/GlariaLuminous/dsh-canvas/releases/download/v0.1.0/dsh-canvas-workbench-0.1.0.tgz) · [验证记录](./VALIDATION.md)
-
-[![实际产品的版本比较界面](./assets/preview.png)](https://github.com/GlariaLuminous/dsh-canvas/releases/tag/v0.1.0)
+[下载插件安装包](https://github.com/GlariaLuminous/dsh-canvas/releases/download/v0.1.0/dsh-canvas-workbench-0.1.0.tgz) · [验证记录](./VALIDATION.md)
 
 这是非官方社区插件，直接使用当前 DSH 会话的模型、消息队列和权限设置。当前版本为早期预览版。
+
+## 产品预览
+
+**整理成果与上下文**：在同一张画布上查看页面和文档，勾选相关成果后交给 DSH 继续处理。
+
+![画布与多成果上下文选择](./assets/canvas.png)
+
+**直接在元素上批注**：点击页面里的标题或段落，保存具体修改意见，并绑定到当前版本。
+
+![页面元素定位与批注](./assets/annotations.png)
+
+**比较与恢复版本**：并排查看修改前后的内容，采用历史版本时保留已有历史。
+
+![修改前后的版本比较](./assets/preview.png)
 
 ## 安装
 
